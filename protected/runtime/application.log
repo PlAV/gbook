@@ -481,3 +481,74 @@ REQUEST_URI=/gbook/
 in X:\home\demo\www\gbook\fckeditor\fckeditor_php5.php (255)
 in X:\home\demo\www\gbook\fckeditor\fckeditor_php5.php (234)
 in X:\home\demo\www\gbook\fckeditor\fckeditor_php5.php (178)
+2012/11/06 13:48:13 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.my.ckeditor.CKEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in X:\home\demo\YiiRoot\framework\YiiBase.php:318
+Stack trace:
+#0 X:\home\demo\YiiRoot\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 X:\home\demo\YiiRoot\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CommentsController), 'application.ext...', Array)
+#2 X:\home\demo\YiiRoot\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 X:\home\demo\www\gbook\protected\views\comments\_form.php(42): CBaseController->widget('application.ext...', Array)
+#4 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#5 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#6 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#7 X:\home\demo\www\gbook\protected\views\comments\index.php(46): CController->renderPartial('_form', Array)
+#8 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#9 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#10 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#11 X:\home\demo\YiiRoot\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#12 X:\home\demo\www\gbook\protected\controllers\CommentsController.php(36): CController->render('index', Array)
+#13 X:\home\demo\YiiRoot\framework\web\actions\CInlineAction.php(50): CommentsController->actionIndex()
+#14 X:\home\demo\YiiRoot\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 X:\home\demo\YiiRoot\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 X:\home\demo\YiiRoot\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(283): CController->run('index')
+#18 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#19 X:\home\demo\YiiRoot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 X:\home\demo\www\gbook\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/gbook/index.php
+---
+2012/11/06 13:55:46 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.ckeditor.CKEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in X:\home\demo\YiiRoot\framework\YiiBase.php:318
+Stack trace:
+#0 X:\home\demo\YiiRoot\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 X:\home\demo\YiiRoot\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CommentsController), 'application.ext...', Array)
+#2 X:\home\demo\YiiRoot\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 X:\home\demo\www\gbook\protected\views\comments\_form.php(42): CBaseController->widget('application.ext...', Array)
+#4 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#5 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#6 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#7 X:\home\demo\www\gbook\protected\views\comments\index.php(46): CController->renderPartial('_form', Array)
+#8 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#9 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#10 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#11 X:\home\demo\YiiRoot\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#12 X:\home\demo\www\gbook\protected\controllers\CommentsController.php(36): CController->render('index', Array)
+#13 X:\home\demo\YiiRoot\framework\web\actions\CInlineAction.php(50): CommentsController->actionIndex()
+#14 X:\home\demo\YiiRoot\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 X:\home\demo\YiiRoot\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 X:\home\demo\YiiRoot\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(283): CController->run('index')
+#18 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#19 X:\home\demo\YiiRoot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 X:\home\demo\www\gbook\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/gbook/
+---
+2012/11/06 13:58:13 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 13:58:18 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 13:58:19 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 13:58:46 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 13:58:46 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (27)
+in X:\home\demo\www\gbook\index.php (13)

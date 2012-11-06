@@ -34,22 +34,12 @@
 		<?=$form->error($model,'homepage'); ?>
 	</div>
    
-	<?php $this->widget('ext.fckeditor.FCKEditorWidget', array(
-      "model"=>$model,
-      "attribute"=>'text',
-      "height"=>'200px',
-      "width"=>'300px',
-      //"toolbarSet"=>'Basic',
-      "fckeditor"=>Yii::app()->basePath."/../fckeditor/fckeditor.php",
-      "fckBasePath"=>Yii::app()->baseUrl."/fckeditor/",
-      "config" => array(
-        "EditorAreaCSS"=>Yii::app()->baseUrl.'/css/index.css',
-        "toolbarSet"=>'new')
-      ,
-        
-        # http://docs.fckeditor.net/FCKeditor_2.x/Developers_Guide/Configuration/Configuration_Options
-      )
-    );?>
+	 <?php $this->widget('application.extensions.ckeditor.CKEditor', array(
+                    'model'=>$model,
+                    'attribute'=>'text',
+                    'language'=>'ru',
+                    'editorTemplate'=>'full',
+    )); ?>
     <div class="row">
 		<?=$form->labelEx($model,'file'); ?>
 		<?=$form->fileField($model,'file'); ?>
