@@ -552,3 +552,89 @@ in X:\home\demo\www\gbook\index.php (13)
 2012/11/06 13:58:46 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
 in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (27)
 in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 14:12:06 [error] [exception.CException] exception 'CException' with message 'fontSizes must be an array of integers' in X:\home\demo\www\gbook\protected\extensions\ckeditor\CKEditor.php:148
+Stack trace:
+#0 X:\home\demo\YiiRoot\framework\base\CComponent.php(153): CKEditor->setFontSizes('11')
+#1 X:\home\demo\YiiRoot\framework\web\CWidgetFactory.php(162): CComponent->__set('fontSizes', '11')
+#2 X:\home\demo\YiiRoot\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CommentsController), 'application.ext...', Array)
+#3 X:\home\demo\YiiRoot\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#4 X:\home\demo\www\gbook\protected\views\comments\_form.php(42): CBaseController->widget('application.ext...', Array)
+#5 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#6 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#7 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#8 X:\home\demo\www\gbook\protected\views\comments\index.php(46): CController->renderPartial('_form', Array)
+#9 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#10 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#11 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#12 X:\home\demo\YiiRoot\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#13 X:\home\demo\www\gbook\protected\controllers\CommentsController.php(36): CController->render('index', Array)
+#14 X:\home\demo\YiiRoot\framework\web\actions\CInlineAction.php(50): CommentsController->actionIndex()
+#15 X:\home\demo\YiiRoot\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 X:\home\demo\YiiRoot\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 X:\home\demo\YiiRoot\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(283): CController->run('index')
+#19 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#20 X:\home\demo\YiiRoot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 X:\home\demo\www\gbook\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/gbook/index.php
+HTTP_REFERER=http://demo/gbook/
+---
+2012/11/06 15:29:37 [error] [exception.CException] exception 'CException' with message 'Property "CKEditor.validEditorTemplates" is not defined.' in X:\home\demo\YiiRoot\framework\base\CComponent.php:131
+Stack trace:
+#0 X:\home\demo\www\gbook\protected\extensions\ckeditor\CKEditor.php(164): CComponent->__get('validEditorTemp...')
+#1 X:\home\demo\YiiRoot\framework\base\CComponent.php(153): CKEditor->setEditorTemplate('my2')
+#2 X:\home\demo\YiiRoot\framework\web\CWidgetFactory.php(162): CComponent->__set('editorTemplate', 'my2')
+#3 X:\home\demo\YiiRoot\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CommentsController), 'application.ext...', Array)
+#4 X:\home\demo\YiiRoot\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#5 X:\home\demo\www\gbook\protected\views\comments\_form.php(45): CBaseController->widget('application.ext...', Array)
+#6 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#7 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#8 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#9 X:\home\demo\www\gbook\protected\views\comments\index.php(46): CController->renderPartial('_form', Array)
+#10 X:\home\demo\YiiRoot\framework\web\CBaseController.php(127): require('X:\home\demo\ww...')
+#11 X:\home\demo\YiiRoot\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\home\demo\ww...', Array, true)
+#12 X:\home\demo\YiiRoot\framework\web\CController.php(870): CBaseController->renderFile('X:\home\demo\ww...', Array, true)
+#13 X:\home\demo\YiiRoot\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#14 X:\home\demo\www\gbook\protected\controllers\CommentsController.php(36): CController->render('index', Array)
+#15 X:\home\demo\YiiRoot\framework\web\actions\CInlineAction.php(50): CommentsController->actionIndex()
+#16 X:\home\demo\YiiRoot\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 X:\home\demo\YiiRoot\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 X:\home\demo\YiiRoot\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(283): CController->run('index')
+#20 X:\home\demo\YiiRoot\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 X:\home\demo\YiiRoot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 X:\home\demo\www\gbook\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/gbook/index.php
+---
+2012/11/06 15:50:31 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 15:50:36 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 15:50:37 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 15:50:38 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 15:50:39 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (27)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 15:58:42 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 15:58:46 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (148)
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (24)
+in X:\home\demo\www\gbook\index.php (13)
+2012/11/06 15:58:46 [warning] [application] Failed to set unsafe attribute "file" of "Comments".
+in X:\home\demo\www\gbook\protected\controllers\CommentsController.php (27)
+in X:\home\demo\www\gbook\index.php (13)

@@ -37,8 +37,11 @@
 	 <?php $this->widget('application.extensions.ckeditor.CKEditor', array(
                     'model'=>$model,
                     'attribute'=>'text',
-                    'language'=>'ru',
-                    'editorTemplate'=>'full',
+                    'editorTemplate'=>'advanced',
+                    'fontSizes'=>array('11'=>'11px'),
+                    'options'=>array('width'=>'400px'),
+                    
+                     
     )); ?>
     <div class="row">
 		<?=$form->labelEx($model,'file'); ?>

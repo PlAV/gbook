@@ -13,7 +13,11 @@
 class CKEditor extends CInputWidget{
     const COLS = 40;
     const ROWS = 10;
-
+	
+	private $mytoolbar=array(
+        array('Link','-','Italic','Strike','Bold','-','Image'),
+    );  
+	
     private $language='en';
     private $allowedLanguages=array(
         'af','ar','bg','bn','bs','ca','cs','da','de','el','en','en-au','en-ca',
@@ -244,7 +248,7 @@ class CKEditor extends CInputWidget{
                 $options['toolbar']='Basic';
                 break;
             default:
-                $options['toolbar']=$this->toolbar;
+                $options['toolbar']=$this->mytoolbar;
         }
         
         $fontFamilies='';
