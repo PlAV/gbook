@@ -1,0 +1,165 @@
+@import url('http://fonts.googleapis.com/css?family=Cuprum&text=%D0%90%D0%91%D0%92%D0%93%D0%94%D0%95%D0%81%D0%96%D0%97%D0%98%D0%9A%D0%9B%D0%9C%D0%9D%D0%9E%D0%9F%D0%A0%D0%A1%D0%A2%D0%A3%D0%A4%D0%A5%D0%A6%D0%A7%D0%A8%D0%A9%D0%AA%D0%AB%D0%AC%D0%AD%D0%AE%D0%AF%D0%B0%D0%B1%D0%B2%D0%B3%D0%B4%D0%B5%D1%91%D0%B6%D0%B7%D0%B8%D0%BA%D0%BB%D0%BC%D0%BD%D0%BE%D0%BF%D1%80%D1%81%D1%82%D1%83%D1%84%D1%85%D1%86%D1%87%D1%88%D1%89%D1%8A%D1%8B%D1%8C%D1%8D%D1%8E%D1%8F0123456789%20%A0');
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #555;
+	font: normal 10pt Arial,Helvetica,sans-serif;
+	
+}
+a{
+    text-decoration: none;
+}
+
+#page{
+    
+    width:480px;
+	margin:auto;
+	background: white;
+    padding: 5px;
+}
+
+
+#header{
+    height: 75px;
+}
+#logo{
+    
+    color: #B13491;
+    font: 25px 'Arial Black';
+    position: relative;
+   margin-bottom: 10px;
+    left: 160px;
+}
+#fig{
+    background: url(fig.png) no-repeat 0 0;
+    position: relative;
+    right: 280px;
+    top: -5px;
+    width: 45px;
+    height:45px;
+    float: right;
+}
+#head_right{
+    position: relative;
+    top:5px ;
+    font-family:  Cuprum, sans-serif;
+}
+/*Contact*/
+#h_contact{
+    float: right;
+    font-size: 14px;
+    right:35px;
+    
+}
+#h_contact div{
+    float: left;
+    margin-left: 5px;
+}
+#sk,#ph{
+    padding: 10px;
+    position: relative;
+   
+}
+#sk{
+    background: url(skype.png) no-repeat 0 0;
+}
+#ph{
+     background: url(phone.png) no-repeat 0 0;
+}
+
+/*Logout*/
+#logout{
+   position: relative;
+   float: right;
+   font-size: 13px;
+   left: 195px;
+   top: 20px;
+}
+#logout div {
+   color: #0066CC;
+   float: left;
+   margin-left: 5px;
+}
+#logout a{
+    color: #0066CC;
+}
+
+#logout a:visited{
+    color: #0066CC;
+}
+#stick{
+    color:black !important;
+    font-weight: bold;
+}
+
+/*Menu*/
+#mainmenu{
+   overflow:hidden;
+   height: 216px;
+   width: 480px;
+   border: 1px solid #717171 ;
+   border-radius: 7px;
+   -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+   margin-top: 15px;
+}
+#mainmenu ul{
+    
+    list-style-type:none ;
+    padding:0 ;
+    margin: 0;
+    
+   
+}
+
+#mainmenu ul li{
+    background:url(bg2.png) repeat-x ;
+    height:36px;
+    
+}
+
+#mainmenu ul li a{
+	color:#ffffff;
+    font:  18px Cuprum, sans-serif;
+    text-decoration:none;
+    height:100%;
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+    
+   
+}
+
+#mainmenu ul li a:hover{
+    background:url(bg.gif) repeat-x ;
+    color:black;
+   	text-decoration:none;
+}
+h2,h1{
+    color: #353535;
+    font-family:  Cuprum, sans-serif   
+}
+h1{
+    font-size:30px;
+}
+#content
+{
+    padding-left: 2px;
+}
+
+
+#footer{
+
+	margin: 10px 20px;
+	font-size: 0.8em;
+    height: 20px;
+}
+#f1{
+    float: left;
+
+}
+#f2{
+    float: right;
+}
+
