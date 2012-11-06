@@ -5,6 +5,18 @@
 ?>
 
 <div class="form">
+<?php $this->widget('application.extensions.elrte.elRTE', array(
+    'selector'=>'text',
+    'cssClass' => 'el-rte',
+    'absoluteURLs' => 'false',
+    'allowSource' => 'true',
+    'lang' => 'ru',
+    'styleWithCSS' => 'true',
+    'height' => '200',
+    'width' => '400',
+    'fmAllow' => 'true',
+    'toolbar' => 'myToolbar',
+ ));?>
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'comments-form',
@@ -34,15 +46,9 @@
 		<?=$form->error($model,'homepage'); ?>
 	</div>
    
-	 <?php $this->widget('application.extensions.ckeditor.CKEditor', array(
-                    'model'=>$model,
-                    'attribute'=>'text',
-                    'editorTemplate'=>'advanced',
-                    'fontSizes'=>array('11'=>'11px'),
-                    'options'=>array('width'=>'400px'),
-                    
-                     
-    )); ?>
+	<div id="text"><?=$form->labelEx($model,'text'); ?></div>
+       <?=$form->error($model,'text'); ?>
+    
     <div class="row">
 		<?=$form->labelEx($model,'file'); ?>
 		<?=$form->fileField($model,'file'); ?>
@@ -64,6 +70,18 @@
         
 	</div>
 
-<?php $this->endWidget(); ?>
+<?php $this->endWidget();
+
+
+
+
+
+
+
+
+ ?>
+
+
+
 
 </div><!-- form -->
